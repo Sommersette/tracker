@@ -11,34 +11,51 @@
 </head>
 <body>
   <div class="fluid-container">
-    <div class="row">
-      <div class="col-sm-2">
+    <h1>Choose Your Path To Coding</h1>
+    <form id="survey" action="index.html" method="post">
+      <div class="form-group">
+        <label for="radio-inline"> Click the one that you would rather play with?
+            <input required="true" type="radio" name="coding" value="frontend" checked>
+            <a href="https://www.epicodus.com/css"><img src="img/room.jpg" alt="room needing to be renovated"></a> <!-- move  to css -->
+            <img class="imsmall" src="img/or.png" alt="the word or">
+            <input required="true" type="radio" name="coding" value="backend">
+            <img src="img/engine.jpg" alt="car engine">
+            <!-- move  to css --> <!-- front/back select option -->
+        </label>  <!-- hide after clicked -->
       </div>
-      <div class="col-sm-8">
-        <form class="" action="index.html" method="post">
-          <div class="form-group">
-            <label for="radio-inline">
-              <input required="true" type="radio" name="coding" value="frontend" checked> Front-End
-              <img src="img/room.jpg" alt="room needing to be renovated"> <!-- move  to css -->
-              <input required="true" type="radio" name="coding" value="backend"> Back-End
-              <img src="img/engine.jpg" alt="car engine">  <!-- move  to css -->
-            </label><br />
-          </div>
-
-
-          <div class="form-group">
-            <label required="true" for="email">Email address:</label>
-            <input type="email" class="form-control" id="email" />
-          </div>
-          <label class="checkbox"> Agree to recieve correspondence from us about coding and learning opportunity.</label>
-
-          </div>
-        </form>
-        <button type="submit" class="bt bt-info">Make the Leap!</button>
-        <div class="col-sm-2">
+      <hr />
+      <div class="form-group">
+        <label for="company" required="true">Which size company would you like to work for?</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="company" value="Large">Large
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="company" value="Small" required="true">Small
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input required="true" type="radio" name="company" value="Startup">Starup
+          </label>
         </div>
       </div>
-    </div>
+      <hr / />
+      <div class="form-group">
+        <div class="checkbox"> <!-- turn into switch https://www.w3schools.com/howto/howto_css_switch.asp -->
+          <label class="switch"><input type="checkbox" name="" value=""></label>
+          <label class="switch"><input type="checkbox" name="" value=""></label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label required="true" for="email">Email address:</label>
+        <input type="email" class="form-control" id="email" />
+      </div> <!-- show when form completed -->
+      <label class="checkbox"> Agree to recieve correspondence from us about coding and learning opportunity.</label>
+    </form>
+    <button type="submit" class="bt bt-submit">Make the Leap!</button>
   </div>
 </body>
 </html>
