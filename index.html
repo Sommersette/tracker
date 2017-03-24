@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Epicodus Track Survey</title>
-    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.css" media="screen" type="text/css" charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css" media="screen" type="text/css" charset="utf-8">
-    <script src="js/jquery-3.2.0.js" charset="utf-8"></script>
-    <script src="js/scripts.js" charset="utf-8"></script>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Coding Path Survey</title>
+  <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.css" media="screen" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css" media="screen" type="text/css" charset="utf-8">
+  <script src="js/jquery-3.2.0.js" charset="utf-8"></script>
+  <script src="js/scripts.js" charset="utf-8"></script>
+</head>
+<body>
+  <div class="fluid-container">
+    <div class="row">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-8">
+        <form class="" action="index.html" method="post">
+          <div class="form-group">
+            <label for="radio-inline">
+              <input required="true" type="radio" name="coding" value="frontend" checked> Front-End
+              <img src="img/room.jpg" alt="room needing to be renovated"> <!-- move  to css -->
+              <input required="true" type="radio" name="coding" value="backend"> Back-End
+              <img src="img/engine.jpg" alt="car engine">  <!-- move  to css -->
+            </label><br />
+          </div>
 
-  </body>
+
+          <div class="form-group">
+            <label required="true" for="email">Email address:</label>
+            <input type="email" class="form-control" id="email" />
+          </div>
+          <label class="checkbox"> Agree to recieve correspondence from us about coding and learning opportunity.</label>
+
+          </div>
+        </form>
+        <button type="submit" class="bt bt-info">Make the Leap!</button>
+        <div class="col-sm-2">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
