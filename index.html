@@ -31,57 +31,62 @@
             </label>
           </div>  <!-- hide after clicked -->
         </div>
+        <button type="submit" class="bt bt-submit">Make the Leap!</button>
         <hr />
+      </form>
       <form>
         <div class="form-group">
-          <label required="true" for="company" required="true">Which size company would you like to work for?</label>
-          <div class="radio">
-            <input type="radio" name="company" value="Large">Large
-            <input type="radio" name="company" value="Small" required="true">Small
-            <input type="radio" name="company" value="Startup">Startup
+          <label required="true" for="company">Which size company would you like to work for?</label>
+          <select required="true" class="form-control" id="size">
+            <option></option>
+            <option value="large">Large</option>
+            <option value="small">Small</option>
+            <option value="startup">Startup</option>
+            <button type="submit" class="bt bt-submit">Make the Leap!</button>
           </div>
         </div>
       </form>
       <hr />
+
       <form>
         <div class="form-group">
           <div class="checkbox"> <!-- turn into switch https://www.w3schools.com/howto/howto_css_switch.asp -->
             <label class="switch"><input type="checkbox" name="" value=""></label>
             <label class="switch"><input type="checkbox" name="" value=""></label>
+            <button type="submit" class="bt bt-submit">Make the Leap!</button>
           </div>
         </div>
+
       </form> <!-- Big company options -->
-      <form type="submit" class="" action="index.html" method="post">
-      </form>
       <form>
         <div class="form-group">
           <label required="true" for="email">Email address:</label>
           <input type="email" class="form-control" id="email" />
         </div> <!-- show when form completed -->
         <label class="checkbox"> Agree to recieve correspondence from us about coding and learning opportunity.</label>
+        <button type="submit" class="bt bt-submit">Make the Leap!</button>
       </form>
-      <button type="submit" class="bt bt-submit">Make the Leap!</button>
-      </div>
-    <div class="tech">
-      <div class="startup"> <!-- ruby -->
-        <h1>Ruby</h1>
-        <a href="https://www.epicodus.com/ruby"><img src="img/ruby.png" alt="ruby icon"></a><!-- info on ruby, add images-->
-      </div>
-      <div class="smallcompany">
-        <h1>Java/Android</h1>
-        <a href="https://www.epicodus.com/java"><img src="img/android.jpg" alt="Android java logo"></a>
-      </div>
-      <div class="largecompany">
-        <h1>PHP and Drupal</h1>
-        <a href="#"><img src="img/drupal.jpg" alt="drupal logo"></a>
-      </div>
-      <div class="largecompany">
-        <h1>C# and .NEt</h1>
-        <a href="https://www.epicodus.com/c-sharp"><img src="img/cnet.jpg" alt="C# and .NET framework logo"></a>
+
+      <div class="tech">
+        <div class="startup"> <!-- ruby -->
+          <h1>Ruby</h1>
+          <a href="https://www.epicodus.com/ruby"><img src="img/ruby.png" alt="ruby icon"></a><!-- info on ruby, add images-->
+        </div>
+        <div class="smallcompany">
+          <h1>Java/Android</h1>
+          <a href="https://www.epicodus.com/java"><img src="img/android.jpg" alt="Android java logo"></a>
+        </div>
+        <div class="largecompany">
+          <h1>PHP and Drupal</h1>
+          <a href="#"><img src="img/drupal.jpg" alt="drupal logo"></a>
+        </div>
+        <div class="largecompany">
+          <h1>C# and .NEt</h1>
+          <a href="https://www.epicodus.com/c-sharp"><img src="img/cnet.jpg" alt="C# and .NET framework logo"></a>
+        </div>
       </div>
     </div>
-    </div>
   </div>
-  </div>
+</div>
 </body>
 </html>
