@@ -4,101 +4,123 @@
   <meta charset="utf-8">
   <title>Coding Path Survey</title>
   <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.css">
-  <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.css" media="screen" type="text/css" charset="utf-8">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css" media="screen" type="text/css" charset="utf-8">
   <script src="js/jquery-3.2.0.js" charset="utf-8"></script>
   <script src="js/scripts.js" charset="utf-8"></script>
 </head>
 <body>
   <div class="fluid-container">
-    <h1>Choose Your Path To Coding</h1>
-    <form id="screen" action="index.html" method="post">
-      <input type="checkbox" name="" value="screen">I like staring at screens.
-      <input type="checkbox" name="" value="noscreen">I would rather do something else.
-      <input type="submit" value="Submit">
+  <div class=col-sm-3> </div>
+  <div class=col-sm-6>
+    <h1>Questionaire to help you choose your coding path.</h1>
+    <div class=" center jumbotron">
+      <h2>Click to Begin </h2>
+      <button type="submit" class="btn btn-success">Begin</button>
+    </div>
+    <div class=" center jumbotron">
+      <form  id="screen" action="index.html" method="post">
+      <input  type="checkbox" name="" value="screen"> I like staring at screens.
+      <input type="checkbox" name="" value="noscreen"> I would rather do something else.<br  />
+      <br  />
+      <button type="submit" class="btn btn-primary">Submit</button><hr />
+
     </form>
-    <!-- frontend vs backend  -->
-    <form id="frontback" action="index.html" method="post">
-      <div class="form-group">
-        <label for="radio-inline"> Click the one that you would rather play with?
-          <div class=radiogroup>
-            <label>Would you rather show everyone the house you decorated?
-              <input required type="radio" name="coding" value="frontend">
-              <img src="img/room.jpg" alt="room needing to be renovated"><!-- move  to css -->
-            </label>
-          </div>
-          <div class="radiogroup">
-            <img class="imsmall" src="img/or.png" alt="the word or">
-          </div>
-          <div class="radiogroup">
-            <label> Would rather work with the part under the hood?
-              <input required type="radio" name="coding" value="backend">
-              <img src="img/engine.jpg" alt="car engine">
-            </label>
-          </div>  <!-- hide after clicked -->
-          <button type="submit" class="bt bt-submit">Submit</button><hr />
-        </form>
+    </div>
+          <!-- frontend vs backend  -->
+    <div class="jumbotron">
+      <form id="frontback" action="index.html" method="post">
+        <div class="form-group">
+          <label for="radio-inline"> Click the one that you would rather play with?
+            <div class=radiogroup>
+              <label>Show everyone the house you decorated?
+                <input required type="radio" name="coding" value="frontend">
+                <img src="img/room.jpg" alt="room needing to be renovated"><!-- move  to css -->
+            </div>
+          </label>
+        <div>
+          <img class="imsmall" src="img/or.png" alt="the word or">
+        </div>
+        <div class="radiogroup">
+          <label> Work with the part under the hood?
+            <input required type="radio" name="coding" value="backend">
+            <img src="img/engine.jpg" alt="car engine">
+          </label>
+        </div>  <!-- hide after clicked -->
+        <button type="submit" class="btn btn-primary">Submit</button><hr />
+      </form>
+      </div>
+    </div>
+
         <!-- customer service  -->
-        <form class="form-group">
-          <label required for="">Do you want to interact 1-on-1 with the customer?</label>
-          <select class="form-control" name="">
+    <div class="jumbotron">
+      <form class="form-group">
+        <label  for="">Do you want to interact 1-on-1 with the customer?</label>
+          <select required class="form-control" name="">
             <option value=""></option>
             <option value="people">Yes please, I love developing relationships!</option>
             <option value="nonpeople">No way! I'd much rather stare at a screen!</option>
-          </select>
-        </form>
+          </select><br />
+        <button type="submit" class="btn btn-primary">Submit</button><hr />
+      </form>
+    </div>
         <!-- office or remote -->
+    <div class="jumbotron">
         <form>
           <div class="form-group">
-            <label required for="">Do you want to come into an office or work  remotely?</label>
-            <select class="form-control" name="">
+            <label  for="">Do you want to come into an office or work  remotely?</label>
+            <select required class="form-control" name="">
               <option value=""></option>
               <option value="remote">Remote</option>
               <option value="office">Office</option>
-            </select>
-            <button type="submit" class="bt bt-submit">Submit</button><hr />
+            </select><br />
+            <button type="submit" class="btn btn-primary">Submit</button><hr />
           </div>
         </form>
+      </div>
         <!-- size company  -->
-        <form>
-          <div class="form-group">
-            <label required for="company">Which size company would you like to work for?</label>
-            <select required class="form-control" id="size">
-              <option></option>
-              <option value="large">Large</option>
-              <option value="small">Small</option>
-              <option value="startup">Startup</option>
-              <button type="submit" class="bt bt-submit">Submit</button><hr />
-            </div>
-          </form>
+    <div class=" jumbotron form-group">
+      <form>
+        <label  for="company">Which size company would you like to work for?</label>
+        <select required class="form-control" id="size">
+          <option></option>
+          <option value="large">Large</option>
+          <option value="small">Small</option>
+          <option value="startup">Startup</option>
+          <br />
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
           <!-- email address  -->
-          <form>
-            <div class="form-group">
-              <label required for="email">Email address:</label>
-              <input type="email" class="form-control" id="email" />
-            </div> <!-- show when form completed -->
-            <label class="checkbox"> Agree to recieve correspondence from us about coding and learning opportunity.</label>
-            <button type="submit" class="bt bt-submit">Submit</button><hr />
-          </form>
+    <div class="form-group jumbotron">
+      <form>
+        <label  for="email">Email address:</label>
+          <input required type="email" class="form-control" id="email" />
+        <button type="submit" class="btn btn-danger">Submit</button><label class="checkbox"></label>
+      </form>
+    </div>
+    <!-- show when form completed -->
           <!-- end forms -->
-          <div class="tech">
-            <div class="startup"> <!-- ruby -->
-              <h1>Ruby</h1>
-              <a href="https://www.epicodus.com/ruby"><img src="img/ruby.png" alt="ruby icon"></a><!-- info on ruby, add images-->
-            </div>
-            <div class="smallcompany">
-              <h1>Java/Android</h1>
-              <a href="https://www.epicodus.com/java"><img src="img/android.jpg" alt="Android java logo"></a>
-            </div>
-            <div class="largecompany">
-              <h1>PHP and Drupal</h1>
-              <a href="#"><img src="img/drupal.jpg" alt="drupal logo"></a>
-            </div>
-            <div class="largecompany">
-              <h1>C# and .NEt</h1>
-              <a href="https://www.epicodus.com/c-sharp"><img src="img/cnet.jpg" alt="C# and .NET framework logo"></a>
-            </div>
-          </div>
-        </div>
-      </body>
+    <div class="tech">
+      <div class="startup"> <!-- ruby -->
+        <h1>Ruby</h1>
+        <a href="https://www.epicodus.com/ruby"><img src="img/ruby.png" alt="ruby icon"></a><!-- info on ruby, add images-->
+      </div>
+      <div class="smallcompany">
+        <h1>Java/Android</h1>
+        <a href="https://www.epicodus.com/java"><img src="img/android.jpg" alt="Android java logo"></a>
+      </div>
+      <div class="largecompany">
+        <h1>PHP and Drupal</h1>
+        <a href="#"><img src="img/drupal.jpg" alt="drupal logo"></a>
+      </div>
+      <div class="largecompany">
+        <h1>C# and .NEt</h1>
+        <a href="https://www.epicodus.com/c-sharp"><img src="img/cnet.jpg" alt="C# and .NET framework logo"></a>
+      </div>
+    </div>
+  </div>
+  <div class=col-sm-3> </div>
+  </div>
+</body>
 </html>
