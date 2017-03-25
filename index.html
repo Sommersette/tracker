@@ -15,11 +15,13 @@
   <div class="fluid-container">
   <div class=col-sm-3> </div>
   <div class=col-sm-6>
-    <h1>Questionaire to help you choose your coding path.</h1>
+    <h1>Questionaire to help you choose your coding path.</h1><hr />
     <div id="begin" class="center jumbotron">
+      <!-- Start screen -->
       <h2>Click to Begin</h2>
       <button type="submit" class="btn btn-success">Begin</button>
     </div>
+    <!-- 2nd screen, staring at them -->
     <div id="screen" class="center jumbotron">
       <form   action="index.html">
       <h3><input  type="radio" name="rightjob" value="screen"> I like staring at screens.</h3>
@@ -27,7 +29,7 @@
       <button type="submit" class="btn btn-primary">Next</button>
     </form>
     </div>
-
+            <!-- first branch end, lesser panda, submit -->
     <div id="different" class="jumbotron">
       <img src="img/redpanda.jpg" alt="red panda asking a very important question"><br />
       <hr />
@@ -35,27 +37,24 @@
         <div>
           <table border="0" align="center" cellpadding="0">
             <tr><td>
-            <input type="text"   name="q" size="25"
-            maxlength="255" value="" />
+            <input type="text"   name="q" size="45"
+            maxlength="255" value="" /> <!-- search and submit -->
             <input type="submit" value="Submit" /></td></tr>
             <tr><td align="center" style="font-size:75%">
-            <input type="radio"  name="sitesearch" value="" />The Web
-            <input type="radio"  name="sitesearch"
-            value="yoursite.com" checked /> Only Your Site<br />
+            <input class="radiosilence" checked type="radio"  name="sitesearch" value="" />
+            <br />
             </td></tr>
           </table>
         </div>
       </form>
     </div>
-
-
           <!-- frontend vs backend  -->
     <div id="frontback" class="jumbotron">
       <form  action="index.html">
         <div class="form-group">
-          <label for="radio-inline"><h3> If coding/developing was like the tangible world which would you rather do?</h3><br />
+          <label for="radio-inline"><h3> If coding was like the tangible world, click the one you would rather do?</h3><br />
             <div class=radiogroup>
-              <label> Paint pictures to hang on the wall  and fill the room full of furniture and accents?
+              <label> Paint pictures to hang on the wall and fill the room full of furniture and accents?
                 <input required type="radio" name="coding" value="frontend">
                 <img class="standardsize" src="img/room.jpg" alt="room needing to be renovated">
               </div>
@@ -73,8 +72,7 @@
           </form>
         </div>
       </div>
-
-        <!-- customer service  -->
+              <!-- customer service  -->
     <div id="people" class="jumbotron">
       <form class="form-group">
         <label for="">Do you want to interact 1-on-1 with the customer?</label><br>
@@ -115,8 +113,6 @@
         </div>
       </form>
     </div>
-
-
             <!-- email address  -->
     <div id="email" class="jumbotron">
       <form>
@@ -125,23 +121,26 @@
           <button type="submit" class="btn btn-danger">Submit</button><label class="checkbox"></label>
       </form>
     </div>
-
     <!-- show when form completed --> <hr>
           <!-- end forms -->
-  <div id="tech">
-      <div class="startup"> <!-- ruby -->
+    <div id="tech">
+      <div class="design jumbotron"> <!-- front-end -->
+        <h1>Front-end Design</h1>
+        <a href="https://www.epicodus.com/design"><img class="standardsize" src="img/frontend.jpg" alt="frontend tools for webdevelopment"></a>
+      </div>
+      <div class="startup jumbotron"> <!-- ruby -->
         <h1>Ruby</h1>
         <a href="https://www.epicodus.com/ruby"><img class="standardsize" src="img/ruby.png" alt="ruby icon"></a><!-- info on ruby, add images-->
       </div>
-      <div class="smallcompany">
+      <div class="smallcompany jumbotron">
         <h1>Java/Android</h1>
         <a href="https://www.epicodus.com/java"><img class="standardsize" src="img/android.jpg" alt="Android java logo"></a>
       </div>
-      <div class="largecompany">
+      <div class="largecompany jumbotron">
         <h1>PHP and Drupal</h1>
         <a href="#"><img class="standardsize" src="img/drupal.jpg" alt="drupal logo"></a>
       </div>
-      <div class="largecompany">
+      <div class="largecompany jumbotron">
         <h1>C# and .NET</h1>
         <a href="https://www.epicodus.com/c-sharp"><img class="standardsize" src="img/cnet.jpg" alt="C# and .NET framework logo"></a>
       </div>
