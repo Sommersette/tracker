@@ -12,18 +12,23 @@ $(document).ready(function(){
       $("#frontback").show();
       $("#screen").hide();
     } else {
-      $("#different ").show(); //add code in index, name img id sun or iframe/object with search engine in it.
+      $("#different ").show();
       $("#screen").hide();
     }
 
   });
 
-  $("#frontback").submit(function(event) {
-    event.preventDefault();
-    var coding = ("input:radio[name=coding]:checked").val();
-    if (coding === "frontback")
-      $("").show();
-  }
+  // $("#frontback").submit(function(event) {
+  //   event.preventDefault();
+  //   var coding = $("input:radio[name=coding]:checked").val();
+  //   if (coding === "frontend") {
+  //     $(".design").show();
+  //     $("#frontback").hide();
+  //   } else {
+  //     $("#people").show();
+  //     $("#frontback").hide();
+  //   }
+
 
 
 
