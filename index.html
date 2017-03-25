@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Coding Path Survey</title>
+  <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.css" media="screen" type="text/css" charset="utf-8">
   <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css" media="screen" type="text/css" charset="utf-8">
   <script src="js/jquery-3.2.0.min.js" charset="utf-8"></script>
@@ -14,51 +16,69 @@
   <div class=col-sm-3> </div>
   <div class=col-sm-6>
     <h1>Questionaire to help you choose your coding path.</h1>
-
     <div id="begin" class="center jumbotron">
-      <h2>Click to Begin </h2>
+      <h2>Click to Begin</h2>
       <button type="submit" class="btn btn-success">Begin</button>
     </div>
-
-    <div id="screen" class=" center jumbotron">
+    <div id="screen" class="center jumbotron">
       <form   action="index.html">
-      <input  type="radio" name="rightjob" value="screen"> I like staring at screens.
-      <input type="radio" name="rightjob" value="noscreen"> I would rather do something else.<br  />
-      <br  />
-      <button type="submit" class="btn btn-primary">Next</button><hr />
-
+      <h3><input  type="radio" name="rightjob" value="screen"> I like staring at screens.</h3>
+      <h3><input type="radio" name="rightjob" value="noscreen"> I would rather do something else...</h3>
+      <button type="submit" class="btn btn-primary">Next</button>
     </form>
     </div>
+
+    <div id="different" class="jumbotron">
+      <img src="img/redpanda.jpg" alt="red panda asking a very important question"><br />
+      <hr />
+      <form method="get" action="http://www.google.com/search">
+        <div>
+          <table border="0" align="center" cellpadding="0">
+            <tr><td>
+            <input type="text"   name="q" size="25"
+            maxlength="255" value="" />
+            <input type="submit" value="Submit" /></td></tr>
+            <tr><td align="center" style="font-size:75%">
+            <input type="radio"  name="sitesearch" value="" />The Web
+            <input type="radio"  name="sitesearch"
+            value="yoursite.com" checked /> Only Your Site<br />
+            </td></tr>
+          </table>
+        </div>
+      </form>
+    </div>
+
+
           <!-- frontend vs backend  -->
     <div id="frontback" class="jumbotron">
-      <form  action="index.html" method="post">
+      <form  action="index.html">
         <div class="form-group">
-          <label for="radio-inline"> Click the one that you would rather play with?
+          <label for="radio-inline"><h3> If coding/developing was like the tangible world which would you rather do?</h3><br />
             <div class=radiogroup>
-              <label>Show everyone the house you decorated?
+              <label> Paint pictures to hang on the wall  and fill the room full of furniture and accents?
                 <input required type="radio" name="coding" value="frontend">
-                <img src="img/room.jpg" alt="room needing to be renovated"><!-- move  to css -->
+                <img class="standardsize" src="img/room.jpg" alt="room needing to be renovated">
+              </div>
+            </label>
+            <div>
+              <img class="imsmall" src="img/or.png" alt="the word or">
             </div>
-          </label>
-        <div>
-          <img class="imsmall" src="img/or.png" alt="the word or">
+            <div class="radiogroup">
+            <br />  <label> Tinker and create modifications with the part under the hood?
+                <input required type="radio" name="coding" value="backend">
+                <img class="standardsize" src="img/engine.jpg" alt="car engine">
+              </label>
+            </div>  <!-- hide after clicked -->
+            <button type="submit" class="btn btn-primary">Next</button><hr />
+          </form>
         </div>
-        <div class="radiogroup">
-          <label> Work with the part under the hood?
-            <input required type="radio" name="coding" value="backend">
-            <img src="img/engine.jpg" alt="car engine">
-          </label>
-        </div>  <!-- hide after clicked -->
-        <button type="submit" class="btn btn-primary">Next</button><hr />
-      </form>
       </div>
-    </div>
 
         <!-- customer service  -->
     <div id="people" class="jumbotron">
       <form class="form-group">
-        <label  for="">Do you want to interact 1-on-1 with the customer?</label>
-          <select required class="form-control" name="">
+        <label for="">Do you want to interact 1-on-1 with the customer?</label><br>
+          <select required class="imput-medium form-control" name="">
             <option value=""></option>
             <option value="people">Yes please, I love developing relationships!</option>
             <option value="nonpeople">No way! I'd much rather stare at a screen!</option>
@@ -70,8 +90,8 @@
     <div id="office" class="jumbotron">
       <form>
         <div class="form-group">
-          <label for="">Do you want to come into an office or work remotely?</label>
-          <select required class="form-control" name="">
+          <label for="">Do you want to come into an office or work remotely?</label><br>
+          <select required class="imput-medium form-control" name="">
             <option></option>
             <option value="remote">Remote</option>
             <option value="office">Office</option>
@@ -84,13 +104,13 @@
     <div id="size" class="jumbotron">
       <form>
         <div class="form-group">
-          <label for="company">Which size company would you want to work for?</label>
-          <select required class="form-control" name="size">
+          <label for="company">Which size company would you want to work for?</label><br>
+          <select required class="imput-medium form-control" name="size">
             <option></option>
             <option value="large">Large</option>
             <option value="small">Small</option>
             <option value="startup">Startup</option>
-          </select>
+          </select><br />
           <button type="submit" class="btn btn-primary">Next</button>
         </div>
       </form>
@@ -98,10 +118,10 @@
 
 
             <!-- email address  -->
-    <div id="email">
+    <div id="email" class="jumbotron">
       <form>
-        <label  for="email">Email address:</label>
-          <input placeholder="em@il"required type="email" class="form-control" id="email" />
+        <label class="email" for="email">Please enter your email address:</label><br />
+          <input placeholder="em@il"required type="email" class="imput-medium form-control" id="email" /><br />
           <button type="submit" class="btn btn-danger">Submit</button><label class="checkbox"></label>
       </form>
     </div>
@@ -111,19 +131,19 @@
   <div id="tech">
       <div class="startup"> <!-- ruby -->
         <h1>Ruby</h1>
-        <a href="https://www.epicodus.com/ruby"><img src="img/ruby.png" alt="ruby icon"></a><!-- info on ruby, add images-->
+        <a href="https://www.epicodus.com/ruby"><img class="standardsize" src="img/ruby.png" alt="ruby icon"></a><!-- info on ruby, add images-->
       </div>
       <div class="smallcompany">
         <h1>Java/Android</h1>
-        <a href="https://www.epicodus.com/java"><img src="img/android.jpg" alt="Android java logo"></a>
+        <a href="https://www.epicodus.com/java"><img class="standardsize" src="img/android.jpg" alt="Android java logo"></a>
       </div>
       <div class="largecompany">
         <h1>PHP and Drupal</h1>
-        <a href="#"><img src="img/drupal.jpg" alt="drupal logo"></a>
+        <a href="#"><img class="standardsize" src="img/drupal.jpg" alt="drupal logo"></a>
       </div>
       <div class="largecompany">
         <h1>C# and .NET</h1>
-        <a href="https://www.epicodus.com/c-sharp"><img src="img/cnet.jpg" alt="C# and .NET framework logo"></a>
+        <a href="https://www.epicodus.com/c-sharp"><img class="standardsize" src="img/cnet.jpg" alt="C# and .NET framework logo"></a>
       </div>
     </div> <!-- add line below each picture to "Click for more info or the like ...." -->
   </div>

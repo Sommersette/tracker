@@ -12,7 +12,8 @@ $(document).ready(function(){
       $("#frontback").show();
       $("#screen").hide();
     } else {
-      $("#sun").show(); //add code in index, name img id sun or iframe/object with search engine in it. 
+      $("#different ").show(); //add code in index, name img id sun or iframe/object with search engine in it.
+      $("#screen").hide();
     }
 
   });

@@ -2,14 +2,32 @@ body{
   background-color: #b0e0e6;
 }
 
-#screen, #frontback,  #people, #office, #size, #email, #tech{
+
+ h1 {
+   font-family: Audiowide,monospace;
+   text-align: center;
+ }
+
+ h3{
+   font-size: 18px;
+ }
+
+
+/*#screen, #frontback,  #people, #office, #size, #email, #tech{
   display: none;
 
-}
+}*/
 
 .jumbotron{
   text-align: center;
 }
+
+}
+
+/*.imbig img {
+  width: 105pxS;
+  height: auto;
+}*/
 
 img {
   width: 250px;
@@ -21,6 +39,7 @@ img {
   width: 80px;
 }
 
+
 label > input{ /* HIDE RADIO */
   visibility: hidden; /* Makes input not-clickable */
   position: absolute; /* Remove input from document flow */
@@ -31,4 +50,9 @@ label > input + img{ /* IMAGE STYLES */
 }
 label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
   border:2px solid #f00;
+}
+
+.imput-medium {
+  width:75%;
+  margin: 0 auto;
 }
