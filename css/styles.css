@@ -2,6 +2,11 @@ body{
   background-color: #b0e0e6;
 }
 
+#screen, #frontback,  #people, #office, #size, #email, #tech{
+  display: none;
+
+}
+
 .jumbotron{
   text-align: center;
 }

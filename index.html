@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.css">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css" media="screen" type="text/css" charset="utf-8">
-  <script src="js/jquery-3.2.0.js" charset="utf-8"></script>
+  <script src="js/jquery-3.2.0.min.js" charset="utf-8"></script>
   <script src="js/scripts.js" charset="utf-8"></script>
 </head>
 <body>
@@ -14,22 +14,24 @@
   <div class=col-sm-3> </div>
   <div class=col-sm-6>
     <h1>Questionaire to help you choose your coding path.</h1>
-    <div class=" center jumbotron">
+
+    <div id="begin" class="center jumbotron">
       <h2>Click to Begin </h2>
       <button type="submit" class="btn btn-success">Begin</button>
     </div>
-    <div class=" center jumbotron">
-      <form  id="screen" action="index.html" method="post">
-      <input  type="checkbox" name="" value="screen"> I like staring at screens.
-      <input type="checkbox" name="" value="noscreen"> I would rather do something else.<br  />
+
+    <div id="screen" class=" center jumbotron">
+      <form   action="index.html" method="post">
+      <input  type="radio" name="" value="screen"> I like staring at screens.
+      <input type="radio" name="" value="noscreen"> I would rather do something else.<br  />
       <br  />
-      <button type="submit" class="btn btn-primary">Submit</button><hr />
+      <button type="submit" class="btn btn-primary">Next</button><hr />
 
     </form>
     </div>
           <!-- frontend vs backend  -->
-    <div class="jumbotron">
-      <form id="frontback" action="index.html" method="post">
+    <div id="frontback" class="jumbotron">
+      <form  action="index.html" method="post">
         <div class="form-group">
           <label for="radio-inline"> Click the one that you would rather play with?
             <div class=radiogroup>
@@ -47,13 +49,13 @@
             <img src="img/engine.jpg" alt="car engine">
           </label>
         </div>  <!-- hide after clicked -->
-        <button type="submit" class="btn btn-primary">Submit</button><hr />
+        <button type="submit" class="btn btn-primary">Next</button><hr />
       </form>
       </div>
     </div>
 
         <!-- customer service  -->
-    <div class="jumbotron">
+    <div id="people" class="jumbotron">
       <form class="form-group">
         <label  for="">Do you want to interact 1-on-1 with the customer?</label>
           <select required class="form-control" name="">
@@ -61,55 +63,52 @@
             <option value="people">Yes please, I love developing relationships!</option>
             <option value="nonpeople">No way! I'd much rather stare at a screen!</option>
           </select><br />
-        <button type="submit" class="btn btn-primary">Submit</button><hr />
+        <button type="submit" class="btn btn-primary">Next</button>
       </form>
     </div>
         <!-- office or remote -->
-    <div class="jumbotron">
+    <div id="office" class="jumbotron">
       <form>
         <div class="form-group">
-          <label  for="">Do you want to come into an office or work  remotely?</label>
+          <label for="">Do you want to come into an office or work remotely?</label>
           <select required class="form-control" name="">
-            <option value=""></option>
+            <option></option>
             <option value="remote">Remote</option>
             <option value="office">Office</option>
           </select><br />
-          <button type="submit" class="btn btn-primary">Submit</button><hr />
+          <button type="submit" class="btn btn-primary">Next</button>
         </div>
       </form>
     </div>
-        <!-- size company  -->
-  <div>
-    <div class="form-group">
+
+    <div id="size" class="jumbotron">
       <form>
-        <label  for="company">Which size company would you like to work for?</label>
-        <select required class="form-control" id="size">
-          <option></option>
-          <option value="large">Large</option>
-          <option value="small">Small</option>
-          <option value="startup">Startup</option>
-          <br />
-          <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="form-group">
+          <label for="company">Which size company would you want to work for?</label>
+          <select required class="form-control" name="size">
+            <option></option>
+            <option value="large">Large</option>
+            <option value="small">Small</option>
+            <option value="startup">Startup</option>
+          </select>
+          <button type="submit" class="btn btn-primary">Next</button>
+        </div>
       </form>
     </div>
-  </div>
-  <br />
-  <br />
-  <br />
 
-          <!-- email address  -->
-    <div>
-      <div class="form-group jumbotron">
-        <form>
-          <label  for="email">Email address:</label>
-            <input required type="email" class="form-control" id="email" />
+
+            <!-- email address  -->
+    <div id="email">
+      <form>
+        <label  for="email">Email address:</label>
+          <input placeholder="em@il"required type="email" class="form-control" id="email" />
           <button type="submit" class="btn btn-danger">Submit</button><label class="checkbox"></label>
-        </form>
-      </div>
+      </form>
     </div>
-    <!-- show when form completed -->
+
+    <!-- show when form completed --> <hr>
           <!-- end forms -->
-    <div class="tech">
+  <div id="tech">
       <div class="startup"> <!-- ruby -->
         <h1>Ruby</h1>
         <a href="https://www.epicodus.com/ruby"><img src="img/ruby.png" alt="ruby icon"></a><!-- info on ruby, add images-->
@@ -126,7 +125,7 @@
         <h1>C# and .NET</h1>
         <a href="https://www.epicodus.com/c-sharp"><img src="img/cnet.jpg" alt="C# and .NET framework logo"></a>
       </div>
-    </div>
+    </div> <!-- add line below each picture to "Click for more info or the like ...." -->
   </div>
   <div class=col-sm-3> </div>
   </div>
