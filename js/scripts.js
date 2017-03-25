@@ -7,6 +7,21 @@ $(document).ready(function(){
 
   $("#screen").submit(function(event) {
     event.preventDefault();
-  }
+    var rightjob = $("input:radio[name=rightjob]:checked").val();
+    if (rightjob === "screen") {
+      $("#frontback").show();
+      $("#screen").hide();
+    } else {
+      $("#sun").show(); //add code in index, name img id sun or iframe/object with search engine in it. 
+    }
 
-})
+  });
+
+
+
+
+
+
+
+
+});
