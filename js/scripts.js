@@ -18,19 +18,19 @@ $(document).ready(function(){
 
   });
 
-  // $("#frontback").submit(function(event) {
-  //   event.preventDefault();
-  //   var coding = $("input:radio[name=coding]:checked").val();
-  //   if (coding === "frontend") {
-  //     $(".design").show();
-  //     $("#frontback").hide();
-  //   } else {
-  //     $("#people").show();
-  //     $("#frontback").hide();
-  //   }
+  $("#frontback").submit(function(event) {
+    event.preventDefault();
+    var coding = $("input:radio[name=coding]:checked").val();
+    if (coding === "frontend") {
+      $("#design").show();
+      $("#frontback").hide();
+    } else {
+      $("#people").show();
+      $("#frontback").hide();
+    }
 
 
-
+});
 
 
 
