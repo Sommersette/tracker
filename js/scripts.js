@@ -33,7 +33,7 @@ $(document).ready(function(){
     event.preventDefault();
     var interaction = $("#interaction").val();
     if (interaction === "personal") {
-      $("#ruby, #rubyVid").show();
+      $("#email, #ruby, #rubyVid").show();
       $("#people").hide();
     } else {
       $("#office").show();
@@ -48,7 +48,7 @@ $(document).ready(function(){
       $("#size").show();
       $("#office").hide();
     } else {
-      $("#android, #javaVid").show();
+      $("#email, #android, #javaVid").show();
       $("#office").hide();
     }
   });
@@ -57,13 +57,13 @@ $(document).ready(function(){
     event.preventDefault();
     var companySize = $("#companySize").val();
     if (companySize === "large"){
-      $("#net, #cVid").show();
+      $("#email, #net, #cVid").show();
       $("#size").hide();
     } else if (companySize === "small") {
-      $("#php, drupalVid").show();
+      $("#php, #drupalVid").show();
       $("#size").hide();
         } else {
-        $("#ruby, #rubyVid").show();
+        $("#email, #ruby, #rubyVid").show();
         $("#hide").hide();
         }
     });
