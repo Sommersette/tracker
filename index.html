@@ -76,7 +76,7 @@
     <div id="people" class="jumbotron">
       <form class="form-group">
         <label for="">Do you want to interact 1-on-1 with the customer?</label><br>
-          <select required class="imput-medium form-control" name="interaction">
+          <select required class="imput-medium form-control" id="interaction">
             <option value=""></option>
             <option value="personal">Yes please, I love developing relationships!</option>
             <option value="nonpeople">No way! I'd much rather stare at a screen!</option>
@@ -89,7 +89,7 @@
       <form>
         <div class="form-group">
           <label for="company">Do you want to come into an office or work remotely?</label><br>
-          <select required class="imput-medium form-control" name="workLocation">
+          <select required class="imput-medium form-control" id="workLocation">
             <option></option>
             <option value="remote">Remote</option>
             <option value="desk">Office Desk</option>
@@ -103,7 +103,7 @@
       <form>
         <div class="form-group">
           <label for="company">Which size company would you want to work for?</label><br>
-          <select required class="imput-medium form-control" name="companySize">
+          <select required class="imput-medium form-control" id="companySize">
             <option></option>
             <option value="large">Large</option>
             <option value="small">Small</option>
@@ -121,33 +121,61 @@
           <button type="submit" class="btn btn-danger">Submit</button><label class="checkbox"></label>
       </form>
     </div>
-    <!-- show when form completed --> <hr>
+    <hr>
           <!-- end forms -->
-    <div id="tech">
-      <div id="design" class="jumbotron"> <!-- front-end -->
-        <h1>Front-end Design</h1>
-        <a href="https://www.epicodus.com/design"><img class="standardsize" src="img/frontend.jpg" alt="frontend tools for webdevelopment"></a>
+          <!-- front-end media & links-->
+      <div class="jumbotron">
+        <div id="frontVid">
+          <iframe  width="560" height="315" src="https://www.youtube.com/embed/Tl0x_zf8I78" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div id="design">
+          <h1>Front-end Design</h1>
+          <a href="https://www.epicodus.com/design"><img class="standardsize" src="img/frontend.jpg" alt="frontend tools for webdevelopment"></a>
+        </div>
       </div>
-      <div id="ruby" class="startup jumbotron"> <!-- ruby -->
-        <h1>Ruby</h1>
-        <h2>Click the image for more info.</h2>
-        <a href="https://www.epicodus.com/ruby"><img class="standardsize" src="img/ruby.png" alt="ruby icon"></a><!-- info on ruby, add images-->
+      <!-- ruby -->
+      <div class="jumbotron">
+        <div id="rubyVid">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/gXXNHtpa_oQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div id="ruby" class="startup">
+          <h1>Ruby</h1>
+          <h2>Click the image for more info.</h2>
+          <a href="https://www.epicodus.com/ruby"><img class="standardsize" src="img/ruby.png" alt="ruby icon"></a>
+        </div>
       </div>
-      <div id="android" class="smallcompany jumbotron">
-        <h1>Java/Android</h1>
-        <h2>Click the image for more info.</h2>
-        <a href="https://www.epicodus.com/java"><img class="standardsize" src="img/android.jpg" alt="Android java logo"></a>
+          <!-- Android/Java -->
+      <div class="jumbotron">
+        <div id="javaVid">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/MmUOomi5afU" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div id="android" class="smallcompany">
+          <h1>Java/Android</h1>
+          <h2>Click the image for more info.</h2>
+          <a href="https://www.epicodus.com/java"><img class="standardsize" src="img/android.jpg" alt="Android java logo"></a>
+        </div>
       </div>
-      <div id="php" class="largecompany jumbotron">
-        <h1>PHP and Drupal</h1>
-        <h2>Click the image for more info.</h2>
-        <a href="#"><img class="standardsize" src="img/drupal.jpg" alt="drupal logo"></a>
+      <!-- PHP/Drupal -->
+      <div class="jumbotron">
+        <div id="drupalVid">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/uLcS7uIlqPo" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div id="php" class="largecompany">
+          <h1>PHP and Drupal</h1>
+          <h2>Click the image for more info.</h2>
+          <a href="https://www.epicodus.com/php"><img class="standardsize" src="img/drupal.jpg" alt="drupal logo"></a>
+        </div>
+        <!-- C#/.NET -->
       </div>
-      <div id="net" class="largecompany jumbotron">
-        <h1>C# and .NET</h1>
-        <h2>Click the image for more info.</h2>
-        <a href="https://www.epicodus.com/c-sharp"><img class="standardsize" src="img/cnet.jpg" alt="C# and .NET framework logo"></a>
-      </div>
+      <div class="jumbotron">
+        <div id="cVid">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/r-HPCqzkDSA" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div id="net" class="largecompany">
+          <h1>C# and .NET</h1>
+          <h2>Click the image for more info.</h2>
+          <a href="https://www.epicodus.com/c-sharp"><img class="standardsize" src="img/cnet.jpg" alt="C# and .NET framework logo"></a>
+        </div>
     </div> <!-- add line below each picture to "Click for more info or the like ...." -->
   </div>
   <div class=col-sm-3> </div>

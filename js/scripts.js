@@ -21,50 +21,50 @@ $(document).ready(function(){
     event.preventDefault();
     var coding = $("input:radio[name=coding]:checked").val();
     if (coding === "frontend") {
-      $("#design").show();
+      $("#design, #frontVid").show();
       $("#frontback").hide();
     } else {
       $("#people").show();
       $("#frontback").hide();
-    }
-});
+      }
+  });
     // breaks here: always hides, but only shows one option no matter what. Form changed from radio to dropdowns.
   $("#people").submit(function(event) {
     event.preventDefault();
-    var interaction = $("select").val();
+    var interaction = $("#interaction").val();
     if (interaction === "personal") {
-      $("#ruby").show();
+      $("#ruby, #rubyVid").show();
       $("#people").hide();
     } else {
       $("#office").show();
       $("#people").hide();
-  }
-});
+    }
+  });
 
   $("#office").submit(function(event) {
     event.preventDefault();
-    var workLocation = $("select").val();
+    var workLocation = $("#workLocation").val();
     if (workLocation === "desk") {
       $("#size").show();
       $("#office").hide();
     } else {
-      $("#android").show();
+      $("#android, #javaVid").show();
       $("#office").hide();
-  }
-});
+    }
+  });
 
   $("#size").submit(function(event) {
     event.preventDefault();
-    var companySize = $("select").val();
+    var companySize = $("#companySize").val();
     if (companySize === "large"){
-    $("#php, #email").show();
-    $("#size").hide();
-  } else if (companySize === "small") {
-    $("#android, #email").show();
-    $("#size").hide();
-    } else {
-    $("#ruby, #email").show();
-    $("#hide").hide();
-    }
-  });
+      $("#net, #cVid").show();
+      $("#size").hide();
+    } else if (companySize === "small") {
+      $("#php, drupalVid").show();
+      $("#size").hide();
+        } else {
+        $("#ruby, #rubyVid").show();
+        $("#hide").hide();
+        }
+    });
 });
