@@ -12,7 +12,7 @@ $(document).ready(function(){
       $("#frontback").show();
       $("#screen").hide();
     } else {
-      $("#different ").show(); // end of this branch
+      $("#different").show(); // end of this branch
       $("#screen").hide();
     }
   });
@@ -21,22 +21,22 @@ $(document).ready(function(){
     event.preventDefault();
     var coding = $("input:radio[name=coding]:checked").val();
     if (coding === "frontend") {
-      $("#design").show(); // end of this branch
+      $("#design").show();
       $("#frontback").hide();
     } else {
-      $("#people").show(); // new branch
+      $("#people").show();
       $("#frontback").hide();
     }
 });
-
+    // breaks here: always hides, but only shows one option no matter what. Form changed from radio to dropdowns. 
   $("#people").submit(function(event) {
     event.preventDefault();
     var interaction = $("select").val();
-    if ("interaction === people") {
-      $("#office").show();
+    if (interaction === "people") {
+      $("#ruby").show();
       $("#people").hide();
     } else {
-      $("#ruby").show();
+      $("#office").show();
       $("#people").hide();
   }
 });
@@ -44,7 +44,7 @@ $(document).ready(function(){
   $("#office").submit(function(event) {
     event.preventDefault();
     var workLocation = $("select").val();
-    if ("workLocation === office") {
+    if (workLocation === "office") {
       $("#size").show();
       $("#office").hide();
     } else {
@@ -53,9 +53,18 @@ $(document).ready(function(){
   }
 });
 
-
-
-
-
-
+  $("#size").submit(function(event) {
+    event.preventDefault();
+    var companySize = $("select").val();
+    if (companySize === "large"){
+    $("#php, #email").show();
+    $("#size").hide();
+  } else if (companySize === "small") {
+    $("#android").show();
+    $("#size").hide();
+  } else {
+    $("#ruby, #email").show();
+    $("#hide").hide();
+    }
+  });
 });
