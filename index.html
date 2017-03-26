@@ -76,9 +76,9 @@
     <div id="people" class="jumbotron">
       <form class="form-group">
         <label for="">Do you want to interact 1-on-1 with the customer?</label><br>
-          <select required class="imput-medium form-control" name="">
+          <select required class="imput-medium form-control" name="interaction">
             <option value=""></option>
-            <option value="people">Yes please, I love developing relationships!</option>
+            <option value="personal">Yes please, I love developing relationships!</option>
             <option value="nonpeople">No way! I'd much rather stare at a screen!</option>
           </select><br />
         <button type="submit" class="btn btn-primary">Next</button>
@@ -88,8 +88,8 @@
     <div id="office" class="jumbotron">
       <form>
         <div class="form-group">
-          <label for="">Do you want to come into an office or work remotely?</label><br>
-          <select required class="imput-medium form-control" name="">
+          <label for="company">Do you want to come into an office or work remotely?</label><br>
+          <select required class="imput-medium form-control" name="workLocation">
             <option></option>
             <option value="remote">Remote</option>
             <option value="office">Office</option>
@@ -103,7 +103,7 @@
       <form>
         <div class="form-group">
           <label for="company">Which size company would you want to work for?</label><br>
-          <select required class="imput-medium form-control" name="size">
+          <select required class="imput-medium form-control" name="companySize">
             <option></option>
             <option value="large">Large</option>
             <option value="small">Small</option>
