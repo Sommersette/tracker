@@ -1,11 +1,19 @@
 body{
-  background-color: #b0e0e6;
+  /*background-color: #b0e0e6;*/
+  background-image: url(../img/Matrix.jpg);
 }
 
 
+
  h1 {
+   color: #ffffff;
    font-family: Audiowide,monospace;
    text-align: center;
+   font-size: 45px;
+   text-shadow: -2px 2px #000000,
+                -2px -2px #8e4040,
+                2px -2px #8e4040,
+                2px 2px #8e4040;
  }
 
  h3{
@@ -34,6 +42,11 @@ body{
 
 .imsmall {
   width: 80px;
+}
+
+#upperright{
+  border-right: 25px;
+  border-top: 300px;
 }
 
 label > input{ /* HIDE RADIO */
