@@ -28,11 +28,11 @@ $(document).ready(function(){
       $("#frontback").hide();
     }
 });
-    // breaks here: always hides, but only shows one option no matter what. Form changed from radio to dropdowns. 
+    // breaks here: always hides, but only shows one option no matter what. Form changed from radio to dropdowns.
   $("#people").submit(function(event) {
     event.preventDefault();
     var interaction = $("select").val();
-    if (interaction === "people") {
+    if (interaction === "personal") {
       $("#ruby").show();
       $("#people").hide();
     } else {
@@ -44,7 +44,7 @@ $(document).ready(function(){
   $("#office").submit(function(event) {
     event.preventDefault();
     var workLocation = $("select").val();
-    if (workLocation === "office") {
+    if (workLocation === "desk") {
       $("#size").show();
       $("#office").hide();
     } else {
@@ -60,9 +60,9 @@ $(document).ready(function(){
     $("#php, #email").show();
     $("#size").hide();
   } else if (companySize === "small") {
-    $("#android").show();
+    $("#android, #email").show();
     $("#size").hide();
-  } else {
+    } else {
     $("#ruby, #email").show();
     $("#hide").hide();
     }

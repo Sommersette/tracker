@@ -9,13 +9,13 @@ body{
  }
 
  h3{
-   font-size: 18px;
+   font-size: auto;
  }
 
 
-#screen, #different, #frontback,  #people, #office, #size, #email, #design, #ruby, #android, #php, #net{
+/*#screen, #different, #frontback,  #people, #office, #size, #email, #design, #ruby, #android, #php, #net{
   display: none;
-}
+}*/
 
 .jumbotron{
   text-align: center;
