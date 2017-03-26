@@ -13,14 +13,14 @@ body{
  }
 
 
-/*#screen, #different, #frontback,  #people, #office, #size, #email, #design, #frontVid, #ruby, #rubyVid, #android, #php, #drupalVid, #javaVid, #net{
+#screen, #different, #frontback,  #people, #office, #size, #email, #design, #frontVid, #ruby, #rubyVid, #android, #php, #drupalVid, #javaVid, #net{
   display: none;
 }
 
 #frontVid, #rubyVid, #drupalVid, #javaVid #cVid{
   border-bottom: 25px;
   color:inherit;
-}*/
+}
 
 .jumbotron{
   text-align: center;
