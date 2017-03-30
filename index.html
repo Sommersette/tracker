@@ -1,184 +1,184 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Coding Path Survey</title>
-  <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.css" media="screen" type="text/css" charset="utf-8">
-  <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.css">
-  <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css" media="screen" type="text/css" charset="utf-8">
-  <script src="js/jquery-3.2.0.min.js" charset="utf-8"></script>
-  <script src="js/scripts.js" charset="utf-8"></script>
-</head>
-<body>
-  <div class="fluid-container">
-  <div class=col-sm-3></div>
-  <div class=col-sm-6>
-    <h1>Questionaire to help you choose your coding path.</h1><hr />
-    <div id="begin" class="center jumbotron">
-      <!-- Start screen -->
-      <h2>Click to Begin</h2>
-      <button type="submit" class="btn btn-success">Begin</button>
-    </div>
-    <!-- 2nd screen, staring at them -->
-    <div id="screen" class="center jumbotron">
-      <form   action="index.html">
-      <h3><input  required type="radio" name="rightjob" value="screen"> I like staring at screens.</h3>
-      <h3><input type="radio" name="rightjob" value="noscreen"> I would rather do something else...</h3>
-      <button type="submit" class="btn btn-primary">Next</button>
-    </form>
-    </div>
-            <!-- first branch end, lesser panda, submit -->
-    <div id="different" class="jumbotron">
-      <img class="img-responsive" src="img/redpanda.jpg" alt="red panda asking a very important question"><br />
-      <hr />
-      <form method="get" action="http://www.google.com/search">
-        <div>
-          <table border="0" align="center" cellpadding="0">
-            <tr><td>
-            <input placeholder="Type your interest here" type="text" name="q" size="45"
-            maxlength="255" value="" /> <!-- search and submit -->
-            <input type="submit" value="Submit" /></td></tr>
-            <tr><td align="center" style="font-size:75%">
-            <input class="radiosilence" checked type="radio"  name="sitesearch" value="" />
-            <br />
-            </td></tr>
-          </table>
+  <head>
+    <meta charset="utf-8">
+    <title>Coding Path Survey</title>
+    <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.css" media="screen" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" media="screen" type="text/css" charset="utf-8">
+    <script src="js/jquery-3.2.0.min.js" charset="utf-8"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="fluid-container">
+      <div class=col-sm-3></div>
+      <div class=col-sm-6>
+        <h1>Questionaire to help you choose your coding path.</h1>
+        <hr />
+        <div id="begin" class="center jumbotron">
+          <!-- Start screen -->
+          <h2>Click to Begin</h2>
+          <button type="submit" class="btn btn-success">Begin</button>
         </div>
-      </form>
-    </div>
+        <!-- 2nd screen, staring at them -->
+        <div id="screen" class="center jumbotron">
+          <form   action="index.html">
+            <h3><input  required type="radio" name="rightjob" value="screen"> I like staring at screens.</h3>
+            <h3><input type="radio" name="rightjob" value="noscreen"> I would rather do something else...</h3>
+            <button type="submit" class="btn btn-primary">Next</button>
+          </form>
+        </div>
+        <!-- first branch end, lesser panda, submit -->
+        <div id="different" class="jumbotron">
+          <img class="img-responsive" src="img/redpanda.jpg" alt="red panda asking a very important question"><br />
+          <hr />
+          <form method="get" action="http://www.google.com/search">
+            <table border="0" align="center" cellpadding="0">
+              <tr><td>
+                <input placeholder="Type your interest here" type="text" name="q" size="45"
+                maxlength="255" value="" /> <!-- search and submit -->
+                <input type="submit" value="Submit" />
+              </td></tr>
+              <tr><td align="center" style="font-size:75%">
+                <input class="radiosilence" checked type="radio"  name="sitesearch" value="" />
+                <br />
+              </td></tr>
+            </table>
+          </form>
+        </div>
           <!-- frontend vs backend  -->
-    <div id="frontback" class="jumbotron">
-      <form  action="index.html">
-        <div class="form-group">
-          <label for="radio-inline"><h3> If coding was like the tangible world, click the one you would rather do?</h3><br />
-            <div class=radiogroup>
-              <label> Paint pictures to hang on the wall and fill the room full of furniture and accents?
+        <div id="frontback" class="jumbotron">
+          <form>
+            <div class="form-group">
+              <label for="radio-inline"><h3> If coding was like the tangible world, click the one you would rather do?</h3><br />
+              <div class=radiogroup>
+                <label> Paint pictures to hang on the wall and fill the room full of furniture and accents?</label>
                 <input required type="radio" name="coding" value="frontend">
                 <img class="standardsize" src="img/room.jpg" alt="room needing to be renovated">
               </div>
-            </label>
-            <div>
-              <img class="imsmall" src="img/or.png" alt="the word or">
-            </div>
-            <div class="radiogroup">
-            <br />  <label> Tinker and create modifications with the part under the hood?
+              <div>
+                <img class="imsmall" src="img/or.png" alt="the word or">
+              </div>
+              <div class="radiogroup">
+                <br />
+                <label> Tinker and create modifications with the part under the hood?
                 <input required type="radio" name="coding" value="backend">
                 <img class="standardsize" src="img/engine.jpg" alt="car engine">
-              </label>
-            </div>  <!-- hide after clicked -->
-            <button type="submit" class="btn btn-primary">Next</button><hr />
+                </label>
+              </div>  <!-- hide after clicked -->
+              <button type="submit" class="btn btn-primary">Next</button><hr />
+            </div>
           </form>
         </div>
-      </div>
-              <!-- customer service  -->
-    <div id="people" class="jumbotron">
-      <form class="form-group">
-        <label for="">Do you want to interact 1-on-1 with the customer?</label><br>
-          <select required class="imput-medium form-control" id="interaction">
-            <option value=""></option>
-            <option value="personal">Yes please, I love developing relationships!</option>
-            <option value="nonpeople">No way! I'd much rather stare at a screen!</option>
-          </select><br />
-        <button type="submit" class="btn btn-primary">Next</button>
-      </form>
-    </div>
-        <!-- office or remote -->
-    <div id="office" class="jumbotron">
-      <form>
-        <div class="form-group">
-          <label for="company">Do you want to come into an office or work remotely?</label><br>
-          <select required class="imput-medium form-control" id="workLocation">
-            <option></option>
-            <option value="remote">Remote</option>
-            <option value="desk">Office Desk</option>
-          </select><br />
-          <button type="submit" class="btn btn-primary">Next</button>
+            <!-- customer service  -->
+        <div id="people" class="jumbotron">
+          <form class="form-group">
+            <label for="">Do you want to interact 1-on-1 with the customer?</label><br>
+            <select required class="imput-medium form-control" id="interaction">
+              <option value=""></option>
+              <option value="personal">Yes please, I love developing relationships!</option>
+              <option value="nonpeople">No way! I'd much rather stare at a screen!</option>
+            </select><br />
+            <button type="submit" class="btn btn-primary">Next</button>
+          </form>
         </div>
-      </form>
-    </div>
-        <!-- office staff size -->
-    <div id="size" class="jumbotron">
-      <form>
-        <div class="form-group">
-          <label for="company">Which size company would you want to work for?</label><br>
-          <select required class="imput-medium form-control" id="companySize">
-            <option></option>
-            <option value="large">Large</option>
-            <option value="small">Small</option>
-            <option value="startup">Startup</option>
-          </select><br />
-          <button type="submit" class="btn btn-primary">Next</button>
+            <!-- office or remote -->
+        <div id="office" class="jumbotron">
+          <form>
+            <div class="form-group">
+              <label for="company">Do you want to come into an office or work remotely?</label><br>
+              <select required class="imput-medium form-control" id="workLocation">
+                <option></option>
+                <option value="remote">Remote</option>
+                <option value="desk">Office Desk</option>
+              </select><br />
+              <button type="submit" class="btn btn-primary">Next</button>
+            </div>
+          </form>
         </div>
-      </form>
-    </div>
+            <!-- office staff size -->
+        <div id="size" class="jumbotron">
+          <form>
+            <div class="form-group">
+              <label for="company">Which size company would you want to work for?</label><br>
+              <select required class="imput-medium form-control" id="companySize">
+                <option></option>
+                <option value="large">Large</option>
+                <option value="small">Small</option>
+                <option value="startup">Startup</option>
+              </select><br />
+              <button type="submit" class="btn btn-primary">Next</button>
+            </div>
+          </form>
+        </div>
             <!-- email address  -->
-    <div id="email" class="jumbotron">
-      <form>
-        <label class="email" for="email">Please enter your email address:</label><br />
-          <input placeholder="em@il"required type="email" class="imput-medium form-control" id="email" /><br />
-          <button type="submit" class="btn btn-danger">Submit</button><label class="checkbox"></label>
-      </form>
+        <div id="email" class="jumbotron">
+          <form>
+            <label class="email" for="email">Please enter your email address:</label><br />
+            <input placeholder="em@il"required type="email" class="imput-medium form-control" id="email" /><br />
+            <button type="submit" class="btn btn-danger">Submit</button><label class="checkbox"></label>
+          </form>
+        </div>
+        <hr>
+            <!-- end forms -->
+            <!-- front-end media & links-->
+        <div id="frontVid" class="jumbotron">
+          <div>
+            <iframe  width="560" height="315" src="https://www.youtube.com/embed/Tl0x_zf8I78" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div id="design">
+            <h1>Front-end Design</h1>
+            <a href="https://www.epicodus.com/design"><img class="standardsize" src="img/frontend.jpg" alt="frontend tools for webdevelopment"></a>
+          </div>
+        </div>
+            <!-- ruby -->
+        <div id="rubyVid" class="jumbotron">
+          <div >
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gXXNHtpa_oQ" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div id="ruby" class="startup">
+            <h1>Ruby</h1>
+            <h2>Click the image for more info.</h2>
+            <a href="https://www.epicodus.com/ruby"><img class="standardsize" src="img/ruby.png" alt="ruby icon"></a>
+          </div>
+        </div>
+            <!-- Android/Java -->
+        <div id="javaVid" class="jumbotron">
+          <div >
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MmUOomi5afU" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div id="android" class="smallcompany">
+            <h1>Java/Android</h1>
+            <h2>Click the image for more info.</h2>
+            <a href="https://www.epicodus.com/java"><img class="standardsize" src="img/android.jpg" alt="Android java logo"></a>
+          </div>
+        </div>
+            <!-- PHP/Drupal -->
+        <div id="drupalVid" class="jumbotron">
+          <div >
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uLcS7uIlqPo" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div id="php" class="largecompany">
+            <h1>PHP and Drupal</h1>
+            <h2>Click the image for more info.</h2>
+            <a href="https://www.epicodus.com/php"><img class="standardsize" src="img/drupal.jpg" alt="drupal logo"></a>
+          </div>
+        </div>
+            <!-- C#/.NET -->
+        <div id="cVid" class="jumbotron">
+          <div >
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/r-HPCqzkDSA" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div id="net" class="largecompany">
+            <h1>C# and .NET</h1>
+            <h2>Click the image for more info.</h2>
+            <a href="https://www.epicodus.com/c-sharp"><img class="standardsize" src="img/cnet.jpg" alt="C# and .NET framework logo"></a>
+          </div>
+        </div>
+      </div>
+      <div class=col-sm-3></div>
     </div>
-    <hr>
-          <!-- end forms -->
-          <!-- front-end media & links-->
-      <div id="frontVid" class="jumbotron">
-        <div>
-          <iframe  width="560" height="315" src="https://www.youtube.com/embed/Tl0x_zf8I78" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div id="design">
-          <h1>Front-end Design</h1>
-          <a href="https://www.epicodus.com/design"><img class="standardsize" src="img/frontend.jpg" alt="frontend tools for webdevelopment"></a>
-        </div>
-      </div>
-      <!-- ruby -->
-      <div id="rubyVid" class="jumbotron">
-        <div >
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/gXXNHtpa_oQ" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div id="ruby" class="startup">
-          <h1>Ruby</h1>
-          <h2>Click the image for more info.</h2>
-          <a href="https://www.epicodus.com/ruby"><img class="standardsize" src="img/ruby.png" alt="ruby icon"></a>
-        </div>
-      </div>
-          <!-- Android/Java -->
-      <div id="javaVid" class="jumbotron">
-        <div >
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/MmUOomi5afU" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div id="android" class="smallcompany">
-          <h1>Java/Android</h1>
-          <h2>Click the image for more info.</h2>
-          <a href="https://www.epicodus.com/java"><img class="standardsize" src="img/android.jpg" alt="Android java logo"></a>
-        </div>
-      </div>
-      <!-- PHP/Drupal -->
-      <div id="drupalVid" class="jumbotron">
-        <div >
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/uLcS7uIlqPo" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div id="php" class="largecompany">
-          <h1>PHP and Drupal</h1>
-          <h2>Click the image for more info.</h2>
-          <a href="https://www.epicodus.com/php"><img class="standardsize" src="img/drupal.jpg" alt="drupal logo"></a>
-        </div>
-      </div>
-      <!-- C#/.NET -->
-      <div id="cVid" class="jumbotron">
-        <div >
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/r-HPCqzkDSA" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div id="net" class="largecompany">
-          <h1>C# and .NET</h1>
-          <h2>Click the image for more info.</h2>
-          <a href="https://www.epicodus.com/c-sharp"><img class="standardsize" src="img/cnet.jpg" alt="C# and .NET framework logo"></a>
-        </div>
-    </div>
-  </div>
-  <div class=col-sm-3></div>
-  </div>
-</body>
+  </body>
 </html>
