@@ -63,7 +63,7 @@ label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
   border:2px solid #f00;
 }
 
-.imput-medium {
+.input-medium {
   width:75%;
   margin: 0 auto;
 }
